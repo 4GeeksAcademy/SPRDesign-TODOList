@@ -1,12 +1,94 @@
+  .iphone-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin-top: 70px;
+    margin-bottom: 10px;
+  }
 
-/* 
+  .iphone {
+    width: 250px;
+    height: 480px;
+    background: #ecebeb;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgb(173, 171, 171);
+  }
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+  /* Pantalla del iPhone */
+  .iphone-screen {
+    width: 230px;
+    height: 395px;
+    background: #2a8d85;
+    margin: 35px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    text-align: center;
+  }
 
-*/
+  .iphone-button {
+    width: 30px;
+    height: 30px;
+    background: #ebe7e7;
+    border-radius: 30px;
+    border: 1px solid rgb(173, 171, 171);
+    position: absolute;
+    bottom: 10px;
+    left: calc(50%);
+    transform: translateX(-50%); /* Posición botón horizontal*/
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  }
+
+  .front-camera {
+    width: 6px;
+    height: 6px;
+    background: #d8d4d4;
+    border-radius: 50%;
+    border: 1px solid rgb(173, 171, 171);
+    position: absolute;
+    top: 8px;
+    left: calc(50% - 40px);
+    margin-top: 5px;
+  }
+
+  .speaker {
+    width: 70px;
+    height: 2px;
+    background: #d8d4d4;
+    border: 1px solid rgb(173, 171, 171);
+    position: absolute;
+    top: 10px;
+    left: calc(50% - 25px);
+    margin-top: 5px;
+  }
+
+  .list-group {
+    width: 300px;
+    height: 225px;
+    overflow-y: auto; /* barra de desplazamiento vertical */
+    white-space: nowrap; /* Evita que las tareas se dividan en varias líneas */
+  }
+
+  /* Barra de desplazamiento en navegadores WebKit (Chrome, Safari) */
+  .list-group::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .list-group::-webkit-scrollbar-track {
+    background-color: #2a8d85;
+  }
+
+  .list-group::-webkit-scrollbar-thumb {
+    background-color: #b4dada;
+    border-radius: 6px;
+  }
+
+  body {
+    cursor: pointer;
+  }
